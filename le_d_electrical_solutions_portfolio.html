@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE&D Electrical Solutions | Premium Electrical Contracting</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#0284c7',
+                            dark: '#0f172a',
+                            amber: '#f59e0b',
+                            amberHover: '#d97706',
+                            lightBg: '#f8fafc',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .gradient-overlay {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.8) 100%);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(245, 158, 11, 0.5);
+        }
+    </style>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-brand-amber selection:text-brand-dark">
+
+    <!-- Top Emergency Banner -->
+    <div class="bg-brand-amber text-brand-dark px-4 py-2 text-xs md:text-sm font-semibold flex justify-between items-center z-50 relative">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i data-lucide="zap" class="w-4 h-4 fill-current"></i>
+                <span>24/7 Emergency Electrical Service Available Across the Region</span>
+            </div>
+            <a href="tel:5551234567" class="hover:underline flex items-center gap-1 font-bold">
+                <i data-lucide="phone-call" class="w-4 h-4"></i>
+                <span class="hidden sm:inline">Call Now: </span>(555) 123-4567
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 bg-brand-dark/95 backdrop-blur-md text-white border-b border-slate-800 z-40 transition-all duration-300">
+        <div class="container mx-auto px-4 lg:px-8 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="bg-brand-amber p-2 rounded-lg text-brand-dark group-hover:scale-105 transition-transform">
+                    <i data-lucide="zap" class="w-6 h-6 stroke-[2.5]"></i>
+                </div>
+                <div>
+                    <span class="text-xl md:text-2xl font-extrabold tracking-tight block leading-none">LE&D</span>
+                    <span class="text-xs text-brand-amber tracking-widest font-semibold uppercase">Electrical Solutions</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden lg:flex items-center space-x-8 font-medium text-sm">
+                <a href="#home" class="hover:text-brand-amber transition-colors">Home</a>
+                <a href="#about" class="hover:text-brand-amber transition-colors">About Us</a>
+                <a href="#services" class="hover:text-brand-amber transition-colors">Services</a>
+                <a href="#projects" class="hover:text-brand-amber transition-colors">Projects</a>
+                <a href="#calculator" class="hover:text-brand-amber transition-colors">Estimator</a>
+                <a href="#safety" class="hover:text-brand-amber transition-colors">Safety</a>
+                <a href="#testimonials" class="hover:text-brand-amber transition-colors">Reviews</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="#quote" class="bg-brand-blue hover:bg-sky-600 text-white font-semibold px-5 py-2.5 rounded-lg shadow-md transition-all duration-200 flex items-center gap-2 text-sm">
+                    <i data-lucide="file-text" class="w-4 h-4"></i>
+                    Get Free Quote
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobileMenuBtn" class="lg:hidden text-slate-300 hover:text-white focus:outline-none" aria-label="Toggle Navigation">
+                <i data-lucide="menu" class="w-7 h-7"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-brand-dark border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="mobile-link block py-2 border-b border-slate-800 hover:text-brand-amber">Home</a>
+            <a href="#about" class="mobile-link block py-2 border-b border-slate-800 hover:text-brand-amber">About Us</a>
+            <a href="#services" class="mobile-link block py-2 border-b border-slate-800 hover:text-brand-amber">Services</a>
+            <a href="#projects" class="mobile-link block py-2 border-b border-slate-800 hover:text-brand-amber">Projects</a>
+            <a href="#calculator" class="mobile-link block py-2 border-b border-slate-800 hover:text-brand-amber">Cost Estimator</a>
+            <a href="#safety" class="mobile-link block py-2 border-b border-slate-800 hover:text-brand-amber">Safety & Certifications</a>
+            <a href="#testimonials" class="mobile-link block py-2 border-b border-slate-800 hover:text-brand-amber">Reviews</a>
+            <a href="#quote" class="mobile-link block py-2 text-brand-amber font-semibold">Get a Free Quote &rarr;</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-brand-dark text-white min-h-[85vh] flex items-center justify-center overflow-hidden">
+        <!-- Background Overlay Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1920&q=80" 
+                 alt="Electrical Contractor working on high voltage panel" 
+                 class="w-full h-full object-cover opacity-20"
+                 onerror="this.onerror=null; this.src='https://placehold.co/1920x1080/0f172a/f59e0b?text=LE%26D+Electrical';" />
+            <div class="absolute inset-0 gradient-overlay"></div>
+        </div>
+
+        <div class="container mx-auto px-4 lg:px-8 py-20 relative z-10">
+            <div class="max-w-3xl">
+                <!-- Eyebrow Pill -->
+                <div class="inline-flex items-center gap-2 bg-brand-amber/10 border border-brand-amber/30 text-brand-amber px-3 py-1.5 rounded-full text-xs md:text-sm font-semibold mb-6">
+                    <span class="w-2 h-2 rounded-full bg-brand-amber animate-pulse"></span>
+                    Licensed Master Electricians • Reg #EC-98765432
+                </div>
+
+                <!-- Main Headline -->
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                    Reliable & High-Voltage <br class="hidden sm:inline" />
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-brand-amber">Electrical Contracting</span> Solutions
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
+                    Delivering precision commercial, industrial, and residential electrical engineering. Fast 24/7 response, code-compliant installations, and guaranteed safety.
+                </p>
+
+                <!-- Action CTAs -->
+                <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                    <a href="#quote" class="bg-brand-amber hover:bg-brand-amberHover text-brand-dark font-bold px-8 py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5 text-center flex items-center justify-center gap-2">
+                        <i data-lucide="calculator" class="w-5 h-5"></i>
+                        Request Free Estimate
+                    </a>
+                    <a href="tel:5551234567" class="bg-slate-800/80 hover:bg-slate-800 text-white border border-slate-700 font-semibold px-8 py-4 rounded-xl transition-all text-center flex items-center justify-center gap-2">
+                        <i data-lucide="phone" class="w-5 h-5 text-brand-amber"></i>
+                        Call (555) 123-4567
+                    </a>
+                </div>
+
+                <!-- Key Trust Badges -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 border-t border-slate-800/80 pt-8">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-sky-500/10 p-2.5 rounded-lg text-sky-400">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-sm">Fully Licensed</p>
+                            <p class="text-xs text-slate-400">& Insured Up to $5M</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="bg-amber-500/10 p-2.5 rounded-lg text-brand-amber">
+                            <i data-lucide="clock" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-sm">24/7 Response</p>
+                            <p class="text-xs text-slate-400">Emergency Callouts</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="bg-emerald-500/10 p-2.5 rounded-lg text-emerald-400">
+                            <i data-lucide="award" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-sm">Certified Team</p>
+                            <p class="text-xs text-slate-400">Master Electricians</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="bg-purple-500/10 p-2.5 rounded-lg text-purple-400">
+                            <i data-lucide="check-circle-2" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-sm">Code Compliant</p>
+                            <p class="text-xs text-slate-400">100% Inspection Pass</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" 
+                             alt="Electrician inspecting power distribution panel" 
+                             class="w-full h-auto object-cover"
+                             onerror="this.onerror=null; this.src='https://placehold.co/800x600/0f172a/ffffff?text=Electrician+at+Work';" />
+                    </div>
+                    <!-- Experience Card Overlay -->
+                    <div class="absolute -bottom-6 -right-6 bg-brand-dark text-white p-6 rounded-2xl shadow-xl hidden sm:block border-2 border-brand-amber">
+                        <div class="text-4xl font-extrabold text-brand-amber">15+</div>
+                        <div class="text-sm font-medium text-slate-300">Years of Operational Excellence</div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="inline-flex items-center gap-2 text-brand-blue font-bold text-sm uppercase tracking-wider mb-3">
+                        <i data-lucide="building" class="w-4 h-4"></i> About LE&D Electrical Solutions
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+                        Powering Infrastructure with Unmatched Precision & Safety
+                    </h2>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Founded on principles of technical excellence and integrity, **LE&D Electrical Solutions** has grown into one of the region’s premier electrical contracting firms. We serve commercial property developers, industrial plant operators, and homeowners with tailored power and automation services.
+                    </p>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        Whether retrofitting high-efficiency LED systems, engineering complex EV fast-charging stations, or modernizing heavy-duty manufacturing panels, our certified Master Electricians prioritize code safety and flawless craftsmanship on every job site.
+                    </p>
+
+                    <!-- Feature Points -->
+                    <div class="grid sm:grid-cols-2 gap-4 mb-8">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-brand-amber shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Upfront Flat-Rate Pricing</h4>
+                                <p class="text-xs text-slate-500">No surprise charges or hidden fee add-ons.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-brand-amber shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Rigorous OSHA Compliance</h4>
+                                <p class="text-xs text-slate-500">Zero-compromise safety protocols.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-brand-amber shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Turnkey Project Delivery</h4>
+                                <p class="text-xs text-slate-500">From blueprint design to final inspection.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-brand-amber shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Workmanship Warranty</h4>
+                                <p class="text-xs text-slate-500">Guaranteed quality backed by full support.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-100">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-blue font-bold text-sm uppercase tracking-wider block mb-2">Our Core Capabilities</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Full-Service Electrical Contracting</h2>
+                <p class="text-slate-600 mt-4">We deliver reliable, scaleable, and safe electrical solutions across commercial, industrial, and residential sectors.</p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 group">
+                    <div class="w-14 h-14 bg-sky-50 text-brand-blue rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                        <i data-lucide="home" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Residential Wiring & Panel Upgrades</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Complete home rewiring, high-capacity 200A/400A breaker panel upgrades, surge protection, and safety hazard remediation.</p>
+                    <a href="#quote" class="text-brand-blue font-semibold text-sm hover:text-sky-700 inline-flex items-center gap-1">Learn More <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 group">
+                    <div class="w-14 h-14 bg-amber-50 text-brand-amber rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-amber group-hover:text-brand-dark transition-colors">
+                        <i data-lucide="building-2" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Commercial Fit-Outs & Contracting</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Tailored electrical design and installation for retail stores, corporate offices, restaurants, and tenant interior builds.</p>
+                    <a href="#quote" class="text-brand-blue font-semibold text-sm hover:text-sky-700 inline-flex items-center gap-1">Learn More <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 group">
+                    <div class="w-14 h-14 bg-slate-100 text-slate-800 rounded-xl flex items-center justify-center mb-6 group-hover:bg-slate-800 group-hover:text-white transition-colors">
+                        <i data-lucide="cpu" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Industrial Power & Automation</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">High-voltage three-phase distribution, motor controls, PLC wiring, transformers, and industrial machinery hookups.</p>
+                    <a href="#quote" class="text-brand-blue font-semibold text-sm hover:text-sky-700 inline-flex items-center gap-1">Learn More <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 group">
+                    <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <i data-lucide="lightbulb" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">LED Retrofits & Lighting Design</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Energy-efficient smart lighting design, automated control systems, and cost-saving LED retrofits for facility operations.</p>
+                    <a href="#quote" class="text-brand-blue font-semibold text-sm hover:text-sky-700 inline-flex items-center gap-1">Learn More <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 group">
+                    <div class="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                        <i data-lucide="car" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">EV Charger Installations</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Level 2 residential wall boxes and commercial DC Fast Charging infrastructure for fleet operations and public stations.</p>
+                    <a href="#quote" class="text-brand-blue font-semibold text-sm hover:text-sky-700 inline-flex items-center gap-1">Learn More <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 group">
+                    <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                        <i data-lucide="zap-off" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Generators & Backup Power</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Commercial and whole-home standby generator installation, automatic transfer switches (ATS), and uninterruptible power systems.</p>
+                    <a href="#quote" class="text-brand-blue font-semibold text-sm hover:text-sky-700 inline-flex items-center gap-1">Learn More <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-brand-blue font-bold text-sm uppercase tracking-wider block mb-2">Proven Track Record</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Featured Projects Gallery</h2>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="flex flex-wrap gap-2 mt-6 md:mt-0" id="projectFilter">
+                    <button data-filter="all" class="filter-btn active bg-brand-dark text-white px-4 py-2 rounded-lg text-sm font-medium transition-all">All Projects</button>
+                    <button data-filter="commercial" class="filter-btn bg-slate-100 text-slate-600 hover:bg-slate-200 px-4 py-2 rounded-lg text-sm font-medium transition-all">Commercial</button>
+                    <button data-filter="industrial" class="filter-btn bg-slate-100 text-slate-600 hover:bg-slate-200 px-4 py-2 rounded-lg text-sm font-medium transition-all">Industrial</button>
+                    <button data-filter="residential" class="filter-btn bg-slate-100 text-slate-600 hover:bg-slate-200 px-4 py-2 rounded-lg text-sm font-medium transition-all">Residential</button>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projectsContainer">
+                
+                <!-- Project 1 -->
+                <div class="project-card rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-all" data-category="commercial">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Tech Hub Office Fit-Out" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                             onerror="this.onerror=null; this.src='https://placehold.co/800x600/0f172a/ffffff?text=Commercial+Project';" />
+                        <span class="absolute top-4 left-4 bg-brand-dark/80 backdrop-blur-md text-brand-amber text-xs font-semibold px-3 py-1 rounded-full">Commercial</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Metro Tech Hub Fit-Out</h3>
+                        <p class="text-slate-600 text-sm mb-4">40,000 sq ft office electrical infrastructure including smart lighting controls, server room backup UPS, and floor box wiring.</p>
+                        <div class="border-t border-slate-100 pt-4 flex justify-between text-xs text-slate-500 font-medium">
+                            <span>Specs: 800A Main Switchboard</span>
+                            <span>Duration: 8 Weeks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-all" data-category="industrial">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" 
+                             alt="Manufacturing Plant Power Upgrade" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                             onerror="this.onerror=null; this.src='https://placehold.co/800x600/0f172a/ffffff?text=Industrial+Project';" />
+                        <span class="absolute top-4 left-4 bg-brand-dark/80 backdrop-blur-md text-brand-amber text-xs font-semibold px-3 py-1 rounded-full">Industrial</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Automotive Plant Power Upgrade</h3>
+                        <p class="text-slate-600 text-sm mb-4">Complete 480V 3-phase power distribution upgrade, robotic arm control integration, and emergency stop circuitry.</p>
+                        <div class="border-t border-slate-100 pt-4 flex justify-between text-xs text-slate-500 font-medium">
+                            <span>Specs: 2000A Substation</span>
+                            <span>Duration: 12 Weeks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-all" data-category="residential">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Luxury Smart Home Automation" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                             onerror="this.onerror=null; this.src='https://placehold.co/800x600/0f172a/ffffff?text=Residential+Project';" />
+                        <span class="absolute top-4 left-4 bg-brand-dark/80 backdrop-blur-md text-brand-amber text-xs font-semibold px-3 py-1 rounded-full">Residential</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Luxury Smart Estate</h3>
+                        <p class="text-slate-600 text-sm mb-4">Full architectural lighting automation, 400A main service upgrade, dual EV fast chargers, and standby generator setup.</p>
+                        <div class="border-t border-slate-100 pt-4 flex justify-between text-xs text-slate-500 font-medium">
+                            <span>Specs: Lutron Integration</span>
+                            <span>Duration: 4 Weeks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-all" data-category="commercial">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555636222-cae831e670b3?auto=format&fit=crop&w=800&q=80" 
+                             alt="Retail Center LED Conversion" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                             onerror="this.onerror=null; this.src='https://placehold.co/800x600/0f172a/ffffff?text=Retail+Project';" />
+                        <span class="absolute top-4 left-4 bg-brand-dark/80 backdrop-blur-md text-brand-amber text-xs font-semibold px-3 py-1 rounded-full">Commercial</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Shopping Center High-Bay Retrofit</h3>
+                        <p class="text-slate-600 text-sm mb-4">Replacement of 350+ metal halide fixtures with energy-efficient LED fixtures, resulting in a 45% reduction in facility energy costs.</p>
+                        <div class="border-t border-slate-100 pt-4 flex justify-between text-xs text-slate-500 font-medium">
+                            <span>Specs: Energy Savings: 45%</span>
+                            <span>Duration: 3 Weeks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-all" data-category="residential">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80" 
+                             alt="Residential Panel Upgrade" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                             onerror="this.onerror=null; this.src='https://placehold.co/800x600/0f172a/ffffff?text=Panel+Upgrade';" />
+                        <span class="absolute top-4 left-4 bg-brand-dark/80 backdrop-blur-md text-brand-amber text-xs font-semibold px-3 py-1 rounded-full">Residential</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Whole-House Panel & Solar Tie-In</h3>
+                        <p class="text-slate-600 text-sm mb-4">Upgraded aging fuse box to modern 200A breaker system with net-metering interface for rooftop solar compatibility.</p>
+                        <div class="border-t border-slate-100 pt-4 flex justify-between text-xs text-slate-500 font-medium">
+                            <span>Specs: 200A Square D Panel</span>
+                            <span>Duration: 1 Day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-all" data-category="industrial">
+                    <div class="relative h-52 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" 
+                             alt="Logistics Warehouse Power Setup" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                             onerror="this.onerror=null; this.src='https://placehold.co/800x600/0f172a/ffffff?text=Warehouse+Project';" />
+                        <span class="absolute top-4 left-4 bg-brand-dark/80 backdrop-blur-md text-brand-amber text-xs font-semibold px-3 py-1 rounded-full">Industrial</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Logistics Center Fleet EV Hub</h3>
+                        <p class="text-slate-600 text-sm mb-4">Installed 12 Level 3 DC Fast Chargers for commercial delivery fleet vehicles with cloud load-balancing system.</p>
+                        <div class="border-t border-slate-100 pt-4 flex justify-between text-xs text-slate-500 font-medium">
+                            <span>Specs: 12 DC Fast Chargers</span>
+                            <span>Duration: 6 Weeks</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Cost Estimator Section -->
+    <section id="calculator" class="py-20 bg-brand-dark text-white relative overflow-hidden">
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <span class="text-brand-amber font-bold text-sm uppercase tracking-wider block mb-2">Instant Planning Tool</span>
+                <h2 class="text-3xl md:text-4xl font-bold">Interactive Project Cost Estimator</h2>
+                <p class="text-slate-300 mt-4">Get a quick, ballpark estimate for your electrical project in seconds. Select options below to calculate estimated ranges.</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-slate-900/90 border border-slate-800 rounded-2xl p-6 sm:p-10 shadow-2xl backdrop-blur-md">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Controls -->
+                    <div class="space-y-6">
+                        <!-- Step 1: Project Type -->
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">1. Project Category</label>
+                            <select id="calcType" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-amber">
+                                <option value="residential">Residential Service</option>
+                                <option value="commercial">Commercial Property</option>
+                                <option value="industrial">Industrial Power / Facility</option>
+                            </select>
+                        </div>
+
+                        <!-- Step 2: Specific Scope -->
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-300 mb-2">2. Primary Work Scope</label>
+                            <select id="calcScope" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-amber">
+                                <!-- Options injected dynamically -->
+                            </select>
+                        </div>
+
+                        <!-- Step 3: Scale Slider -->
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold text-slate-300 mb-2">
+                                <span>3. Scale / Size Factor</span>
+                                <span id="calcScaleVal" class="text-brand-amber">Medium Scope</span>
+                            </div>
+                            <input type="range" id="calcScale" min="1" max="3" value="2" class="w-full accent-brand-amber bg-slate-800 rounded-lg h-2 cursor-pointer">
+                            <div class="flex justify-between text-xs text-slate-500 mt-2">
+                                <span>Small / Basic</span>
+                                <span>Standard</span>
+                                <span>Large / Custom</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Output Summary Box -->
+                    <div class="bg-slate-800/80 rounded-xl p-6 border border-slate-700 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-2 text-brand-amber font-semibold text-sm mb-4">
+                                <i data-lucide="calculator" class="w-5 h-5"></i>
+                                Estimated Budget Range
+                            </div>
+                            <div class="text-3xl sm:text-4xl font-extrabold text-white mb-2" id="calcDisplay">
+                                $1,200 - $2,500
+                            </div>
+                            <p class="text-xs text-slate-400 mb-6">
+                                *Note: This calculation provides a preliminary estimate based on standard labor and materials. A physical site survey is required for a binding fixed quote.
+                            </p>
+                        </div>
+
+                        <a href="#quote" class="w-full bg-brand-amber hover:bg-brand-amberHover text-brand-dark font-bold py-3 px-4 rounded-xl text-center transition-all block">
+                            Lock In Formal Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety & Why Choose Us Section -->
+    <section id="safety" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-brand-blue font-bold text-sm uppercase tracking-wider block mb-2">Zero Compromise</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Safety, Standards & Code Compliance</h2>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Electrical contracting demands absolute precision. A single misstep can lead to operational downtime or severe safety hazards. At LE&D Electrical Solutions, our entire operational protocol revolves around strict adherence to National Electrical Code (NEC) guidelines and OSHA standard operating procedures.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-start gap-4">
+                            <div class="bg-amber-100 text-brand-amber p-3 rounded-lg shrink-0">
+                                <i data-lucide="shield-alert" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">OSHA 30 Certified Workforce</h4>
+                                <p class="text-slate-600 text-sm">Every site supervisor on our team maintains current OSHA 30 safety certifications.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-start gap-4">
+                            <div class="bg-sky-100 text-brand-blue p-3 rounded-lg shrink-0">
+                                <i data-lucide="file-check-2" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">100% Inspection Guarantee</h4>
+                                <p class="text-slate-600 text-sm">We handle all municipal permits, scheduling, and ensure first-pass inspection success.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-start gap-4">
+                            <div class="bg-emerald-100 text-emerald-600 p-3 rounded-lg shrink-0">
+                                <i data-lucide="badge-dollar-sign" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">$5,000,000 Liability Coverage</h4>
+                                <p class="text-slate-600 text-sm">Comprehensive commercial general liability insurance protecting your property investments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification Badges Display -->
+                <div class="bg-brand-dark rounded-2xl p-8 text-white shadow-xl relative overflow-hidden">
+                    <div class="absolute -right-10 -bottom-10 opacity-10 text-white">
+                        <i data-lucide="award" class="w-72 h-72"></i>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mb-6 text-brand-amber">Certifications & Accreditations</h3>
+                    
+                    <ul class="space-y-4 border-b border-slate-800 pb-8 mb-8">
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-brand-amber"></i>
+                            <span>State Master Electrical Contractor License #EC-98765432</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-brand-amber"></i>
+                            <span>NECA (National Electrical Contractors Assoc.) Member</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-brand-amber"></i>
+                            <span>IBEW Certified Electrical Professionals</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-brand-amber"></i>
+                            <span>Tesla & ChargePoint Certified Infrastructure Installers</span>
+                        </li>
+                    </ul>
+
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-xs text-slate-400">Emergency Support Line</p>
+                            <p class="text-xl font-bold text-white">(555) 123-4567</p>
+                        </div>
+                        <a href="tel:5551234567" class="bg-brand-amber text-brand-dark px-4 py-2 rounded-lg font-bold text-sm hover:bg-brand-amberHover transition-colors">
+                            Call 24/7
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-blue font-bold text-sm uppercase tracking-wider block mb-2">Client Reviews</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Trusted By Industry Leaders & Homeowners</h2>
+                <p class="text-slate-600 mt-4">Here is what property managers, general contractors, and clients say about working with LE&D Electrical Solutions.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <!-- Stars -->
+                        <div class="flex text-amber-400 mb-4">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed mb-6 italic">
+                            "LE&D handled our 40,000 sq ft office fit-out with absolute professionalism. Their team worked seamlessly alongside our drywall and HVAC sub-contractors, finishing two days ahead of schedule."
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900">Marcus Vance</h4>
+                        <p class="text-xs text-slate-500">Commercial Property Manager • Apex Developments</p>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed mb-6 italic">
+                            "When our main production line breaker kept tripping at 2 AM, LE&D had a Master Electrician on site within 45 minutes. They diagnosed a faulty ground bus and had us running before morning shift."
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900">Sarah Jenkins</h4>
+                        <p class="text-xs text-slate-500">Plant Manager • Apex Precision Logistics</p>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed mb-6 italic">
+                            "Upgraded our old 100A panel to 200A and installed a Level 2 EV Charger in our garage. The quote was upfront, the crew was tidy, and the city permit inspection passed without a single issue."
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900">David Reynolds</h4>
+                        <p class="text-xs text-slate-500">Homeowner • Residential Remodel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Quote Form Section -->
+    <section id="quote" class="py-20 bg-slate-100">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-200">
+                <div class="grid lg:grid-cols-5">
+                    
+                    <!-- Left Info Column -->
+                    <div class="lg:col-span-2 bg-brand-dark text-white p-8 sm:p-12 flex flex-col justify-between">
+                        <div>
+                            <div class="inline-flex items-center gap-2 text-brand-amber font-bold text-xs uppercase tracking-wider mb-4">
+                                <i data-lucide="mail" class="w-4 h-4"></i> Get In Touch
+                            </div>
+                            <h2 class="text-3xl font-bold mb-6">Let's Discuss Your Electrical Project</h2>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-8">
+                                Fill out the form or reach out directly to speak with an estimator. For urgent electrical outages or hazardous emergencies, please call our 24/7 hotline immediately.
+                            </p>
+
+                            <div class="space-y-6 text-sm">
+                                <div class="flex items-start gap-4">
+                                    <i data-lucide="phone" class="w-5 h-5 text-brand-amber shrink-0 mt-1"></i>
+                                    <div>
+                                        <p class="font-bold text-white">Direct Line / Emergency</p>
+                                        <p class="text-slate-300">(555) 123-4567</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <i data-lucide="mail" class="w-5 h-5 text-brand-amber shrink-0 mt-1"></i>
+                                    <div>
+                                        <p class="font-bold text-white">Email Inquiries</p>
+                                        <p class="text-slate-300">info@led-electrical.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <i data-lucide="map-pin" class="w-5 h-5 text-brand-amber shrink-0 mt-1"></i>
+                                    <div>
+                                        <p class="font-bold text-white">Headquarters</p>
+                                        <p class="text-slate-300">100 Industrial Parkway, Suite 400<br>Metropolis, NY 10001</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <i data-lucide="clock" class="w-5 h-5 text-brand-amber shrink-0 mt-1"></i>
+                                    <div>
+                                        <p class="font-bold text-white">Business Hours</p>
+                                        <p class="text-slate-300">Mon - Fri: 7:00 AM - 6:00 PM<br>Emergency: 24/7 / 365 Days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-12 pt-6 border-t border-slate-800 text-xs text-slate-400">
+                            Lic #EC-98765432 • Fully Bonded & Insured Contractor
+                        </div>
+                    </div>
+
+                    <!-- Right Form Column -->
+                    <div class="lg:col-span-3 p-8 sm:p-12 bg-white">
+                        <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-semibold text-slate-700 mb-2">Full Name *</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-blue/50 focus:border-brand-blue text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-slate-700 mb-2">Phone Number *</label>
+                                    <input type="tel" required placeholder="(555) 000-0000" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-blue/50 focus:border-brand-blue text-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-semibold text-slate-700 mb-2">Email Address *</label>
+                                    <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-blue/50 focus:border-brand-blue text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-slate-700 mb-2">Service Needed *</label>
+                                    <select required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-blue/50 focus:border-brand-blue text-sm bg-white">
+                                        <option value="" disabled selected>Select a Service</option>
+                                        <option value="commercial">Commercial Contracting</option>
+                                        <option value="industrial">Industrial Power / Automation</option>
+                                        <option value="panel">Residential Panel Upgrade</option>
+                                        <option value="ev">EV Charger Installation</option>
+                                        <option value="generator">Backup Generator Installation</option>
+                                        <option value="led">LED Retrofit / Lighting</option>
+                                        <option value="emergency">24/7 Emergency Service</option>
+                                        <option value="other">Other / General Inquiry</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-2">Project Details & Message *</label>
+                                <textarea rows="4" required placeholder="Please describe your electrical scope, site location, timeline, and any special requirements..." class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-blue/50 focus:border-brand-blue text-sm"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-brand-blue hover:bg-sky-600 text-white font-bold py-4 rounded-xl shadow-lg transition-all text-center flex items-center justify-center gap-2">
+                                <i data-lucide="send" class="w-5 h-5"></i>
+                                Submit Quote Request
+                            </button>
+
+                            <div id="formSuccess" class="hidden bg-emerald-50 border border-emerald-200 text-emerald-800 p-4 rounded-xl text-center text-sm font-medium">
+                                Thank you! Your quote request has been sent successfully. One of our estimators will contact you shortly.
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-slate-400 border-t border-slate-800 py-12">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Brand Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2">
+                        <div class="bg-brand-amber p-1.5 rounded text-brand-dark">
+                            <i data-lucide="zap" class="w-5 h-5"></i>
+                        </div>
+                        <span class="text-xl font-extrabold text-white">LE&D Solutions</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Full-service electrical contractor specializing in high-voltage industrial automation, commercial fit-outs, and residential upgrades.
+                    </p>
+                    <p class="text-xs text-brand-amber font-semibold">
+                        State License #EC-98765432
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Quick Navigation</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Our Services</a></li>
+                        <li><a href="#projects" class="hover:text-white transition-colors">Featured Projects</a></li>
+                        <li><a href="#calculator" class="hover:text-white transition-colors">Cost Estimator</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Services</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#services" class="hover:text-white transition-colors">Commercial Contracting</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Industrial Power Systems</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">EV Charging Infrastructure</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Panel Upgrades & Surge</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Backup Standby Generators</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info & Emergency -->
+                <div>
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Emergency Callouts</h4>
+                    <p class="text-xs text-slate-400 mb-3">Available 24/7 for urgent power outages and electrical hazards.</p>
+                    <a href="tel:5551234567" class="inline-flex items-center gap-2 bg-brand-amber text-brand-dark font-bold text-xs px-4 py-2.5 rounded-lg hover:bg-brand-amberHover transition-colors">
+                        <i data-lucide="phone-call" class="w-4 h-4"></i>
+                        (555) 123-4567
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; <span id="currentYear"></span> LE&D Electrical Solutions. All Rights Reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                    <a href="#" class="hover:underline">Terms of Service</a>
+                    <a href="#" class="hover:underline">Safety Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Client-Side JavaScript Logic -->
+    <script>
+        // Initialize Lucide Icons
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            initCalculator();
+            initFilter();
+            initMobileMenu();
+        });
+
+        // Mobile Menu Drawer Toggle
+        function initMobileMenu() {
+            const btn = document.getElementById('mobileMenuBtn');
+            const menu = document.getElementById('mobileMenu');
+            const links = document.querySelectorAll('.mobile-link');
+
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        }
+
+        // Project Gallery Category Filter
+        function initFilter() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Reset active states
+                    filterBtns.forEach(b => {
+                        b.classList.remove('bg-brand-dark', 'text-white');
+                        b.classList.add('bg-slate-100', 'text-slate-600');
+                    });
+
+                    // Activate current button
+                    btn.classList.removeClass ? btn.classList.removeClass('bg-slate-100', 'text-slate-600') : null;
+                    btn.classList.add('bg-brand-dark', 'text-white');
+
+                    const category = btn.getAttribute('data-filter');
+
+                    projectCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        }
+
+        // Interactive Cost Estimator Engine
+        const scopeData = {
+            residential: [
+                { name: 'Panel Upgrade (200A)', baseMin: 1800, baseMax: 3500 },
+                { name: 'EV Charger Installation', baseMin: 750, baseMax: 1600 },
+                { name: 'Whole Home Rewiring', baseMin: 6000, baseMax: 14000 },
+                { name: 'Generator Installation', baseMin: 3500, baseMax: 8000 }
+            ],
+            commercial: [
+                { name: 'Office Fit-Out / Wiring', baseMin: 5000, baseMax: 18000 },
+                { name: 'LED Lighting Retrofit', baseMin: 2500, baseMax: 9000 },
+                { name: 'Commercial Substation / Panel', baseMin: 8000, baseMax: 25000 }
+            ],
+            industrial: [
+                { name: '3-Phase Power Distribution', baseMin: 12000, baseMax: 35000 },
+                { name: 'Industrial Motor Control Center', baseMin: 15000, baseMax: 45000 },
+                { name: 'Fleet DC Fast EV Hub', baseMin: 20000, baseMax: 60000 }
+            ]
+        };
+
+        function initCalculator() {
+            const calcType = document.getElementById('calcType');
+            const calcScope = document.getElementById('calcScope');
+            const calcScale = document.getElementById('calcScale');
+            const calcScaleVal = document.getElementById('calcScaleVal');
+            const calcDisplay = document.getElementById('calcDisplay');
+
+            function populateScopeOptions() {
+                const type = calcType.value;
+                const options = scopeData[type];
+                calcScope.innerHTML = '';
+                options.forEach((item, index) => {
+                    const opt = document.createElement('option');
+                    opt.value = index;
+                    opt.textContent = item.name;
+                    calcScope.appendChild(opt);
+                });
+                updateEstimate();
+            }
+
+            function updateEstimate() {
+                const type = calcType.value;
+                const selectedIndex = parseInt(calcScope.value) || 0;
+                const scaleMultiplier = parseFloat(calcScale.value);
+
+                // Update Scale Text Label
+                if (scaleMultiplier === 1) calcScaleVal.textContent = "Small / Basic Scope";
+                else if (scaleMultiplier === 2) calcScaleVal.textContent = "Standard / Medium Scope";
+                else calcScaleVal.textContent = "Large / Custom Scope";
+
+                const selectedScope = scopeData[type][selectedIndex];
+                if (!selectedScope) return;
+
+                const scaleFactor = scaleMultiplier === 1 ? 0.8 : scaleMultiplier === 2 ? 1.0 : 1.6;
+
+                const minPrice = Math.round(selectedScope.baseMin * scaleFactor);
+                const maxPrice = Math.round(selectedScope.baseMax * scaleFactor);
+
+                calcDisplay.textContent = `$${minPrice.toLocaleString()} - $${maxPrice.toLocaleString()}`;
+            }
+
+            calcType.addEventListener('change', populateScopeOptions);
+            calcScope.addEventListener('change', updateEstimate);
+            calcScale.addEventListener('input', updateEstimate);
+
+            populateScopeOptions();
+        }
+
+        // Contact Form Submission Mock Handling
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const successBox = document.getElementById('formSuccess');
+            successBox.classList.remove('hidden');
+            event.target.reset();
+            setTimeout(() => {
+                successBox.classList.add('hidden');
+            }, 6000);
+        }
+    </script>
+</body>
+</html>
